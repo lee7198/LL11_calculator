@@ -2,3 +2,4 @@
 
 - ReactJs
 - Vite (Typescript + SWC)
+- Zustand
