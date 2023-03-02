@@ -1,5 +1,5 @@
 import { useBearStore } from "../store/zustand";
-import { DisplayProps } from "../type/interface";
+import { DisplayProps } from "../store/data/interface";
 
 function CalculatorDisplay() {
   const calData = useBearStore((state) => state);

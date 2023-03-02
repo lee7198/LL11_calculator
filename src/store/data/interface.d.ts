@@ -1,4 +1,4 @@
-import { Operator } from "./type";
+import { Operator } from "./type.d";
 
 export interface DisplayProps {
   number: number;
@@ -9,9 +9,12 @@ export interface CalculState {
   postNumber: number;
   displayNumber: number;
   plusMinus: number;
-  operator: string;
+  isFloat: boolean;
+  operator: Operator;
   putDisplayNumber: (number: number) => void;
+  putDisplayNumberFloat: (number: number) => void;
   resetDisplayNumber: () => void;
   switchSymbol: () => void;
   setOperator: (operator: Operator) => void;
+  calculate: () => void;
 }
