@@ -15,6 +15,7 @@ export interface CalculState {
   putDisplayNumberFloat: (number: number) => void;
   resetDisplayNumber: () => void;
   switchSymbol: () => void;
+  switchFloat: () => void;
   setOperator: (operator: Operator) => void;
   calculate: () => void;
 }

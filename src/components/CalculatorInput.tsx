@@ -11,15 +11,15 @@ function CalculatorInput() {
         <button
           onClick={() =>
             calState.isFloat
-              ? calState.putDisplayNumber(key)
-              : calState.putDisplayNumberFloat(key)
+              ? calState.putDisplayNumberFloat(key)
+              : calState.putDisplayNumber(key)
           }
           key={key}
         >
           {key}
         </button>
       ))}
-      <button onClick={calState.resetDisplayNumber}>.</button>
+      <button onClick={calState.switchFloat}>.</button>
       <br />
       <button onClick={calState.resetDisplayNumber}>AC</button>
       <button onClick={() => calState.setOperator(Operator.PLUS)}>+</button>
